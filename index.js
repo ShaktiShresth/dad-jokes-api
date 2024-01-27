@@ -11,7 +11,7 @@ const generateJokes = async () => {
     };
     const res = await fetch("https://icanhazdadjoke.com", setHeader);
     const data = await res.json();
-    jokes.innerHTML = data.joke;
+    jokes.innerHTML = data.joke ? data.joke : "Something went wrong!!!";
   } catch (error) {
     console.log(`The error is ${err}`);
   }
