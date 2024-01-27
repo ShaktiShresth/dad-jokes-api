@@ -1,0 +1,44 @@
+body{
+    background: #2F3C7E;
+}
+div.container{
+    margin: auto;
+    height: 300px;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FBEAEB;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+div.container h3 span{
+    text-align: center;
+    color: #2F3C7E;
+    font-family: cursive;
+}
+div.container div.joke{
+    font-style: italic;
+    color: black;
+    font-family: cursive;
+    text-align: center;
+}
+div.container button#jokeBtn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font: bold;
+    background: #2F3C7E;
+}
+div.container #jokeBtn:hover{
+    background: #364383;
+    color: white;
+}
